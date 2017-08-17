@@ -78,12 +78,12 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/:articlename', function(req, res){
-    //articlename=article-one
+app.get('/:articleName', function(req, res){
+    //articleName=article-one
     //articles[article-one]={}content object for article one
-    var articlename=req.pareams.articleone;
+    var articleName=req.pareams.articleone;
     
- res.send(createTemplate(articles[articlename]));  
+ res.send(createTemplate(articles[articleName]));  
 });
 
 app.get('/article-two', function(req, res){

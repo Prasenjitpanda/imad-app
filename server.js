@@ -82,6 +82,14 @@ app.get('/counter', function (req,res){
     counter = counter + 1;
     res.send(counter.toString());
 });
+app.get('/submit-name',function(req,res){
+   // get the name from the request object
+   res.send(JSON.stringify(names));
+   var name = req.query.name;
+   names.push(name);
+  
+    
+});
 
 app.get('/:articleName', function(req, res){
     //articleName-article-one

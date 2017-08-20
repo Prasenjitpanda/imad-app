@@ -1,4 +1,5 @@
 //couter code
+var button = document.getElementById('counter');
 button.onclick = function(){
     //create a request object.
     var request = new XMLHttpRequest();
@@ -30,7 +31,7 @@ submit.onclick = function(){
     for(var i=0;i<names.length;i++){
         list += '<li>'+ names[i] + '</li>';
     }
-    var ui = document.getElementById('namelist');
+    var ul = document.getElementById('namelist');
     //capture a list of name and render it as a list
-    ui.ineerHTML = list;
+    ul.innerHTML = list;
 };

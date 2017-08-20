@@ -82,6 +82,7 @@ app.get('/counter', function (req,res){
     counter = counter + 1;
     res.send(counter.toString());
 });
+var names = [];
 app.get('/submit-name',function(req,res){
    // get the name from the request object
 
@@ -92,7 +93,7 @@ app.get('/submit-name',function(req,res){
   
     
 });
-var names = [];
+
 app.get('/:articleName', function(req, res){
     //articleName-article-one
     //articles[article-one]_{}content object for article one

@@ -30,7 +30,7 @@ submit.onclick = function(){
     for(var i=0;i<names.length;i++){
         list += '<li>'+ names[i] + '</li>';
     }
-    var ul = document.getElementById('namelist');
+    var ui = document.getElementById('namelist');
     //capture a list of name and render it as a list
-    ul.ineerHTML = list;
+    ui.ineerHTML = list;
 };

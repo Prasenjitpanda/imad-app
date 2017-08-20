@@ -82,16 +82,6 @@ app.get('/counter', function (req,res){
     counter = counter + 1;
     res.send(counter.toString());
 });
-app.get('/submit-name',function(req,res){
-   // get the name from the request object
-
-   var name = req.query.name;
-   names.push(name);
-      res.send(JSON.stringify(names));
-      res.send(names);
-  
-    
-});
 
 app.get('/:articleName', function(req, res){
     //articleName-article-one
@@ -120,6 +110,17 @@ app.get('/submit-name',function(req,res){
   
     
 });
+app.get('/submit-name/:name',function(req,res){
+   // get the name from the request object
+
+   var name = req.params.name;
+   names.push(name);
+      res.send(JSON.stringify(names));
+      res.send(names);
+  
+    
+});
+
 
 
 // Do not change port, otherwise your app won't run on IMAD servers

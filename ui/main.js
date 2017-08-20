@@ -18,6 +18,6 @@ button.onclick = function(){
        //ot done yet
 };
 //make the request
-    request.open('GET',`http://prasenjitpanda123.imad.hasura-app.io/counte`,true);
+    request.open('GET',`http://prasenjitpanda123.imad.hasura-app.io/counter`,true);
     request.send(null);
 };

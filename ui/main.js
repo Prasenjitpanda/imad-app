@@ -22,8 +22,7 @@ button.onclick = function(){
     request.send(null);
 };
 //submit name
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
+
 var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
       var request = new XMLHttpRequest();
@@ -48,11 +47,11 @@ submit.onclick = function(){
         }
        //ot done yet
 };
-//make the request
+//make the reque
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
     request.open(`GET`,`http://prasenjitpanda123.imad.hasura-app.io/submit-name?name=`+name , true);
     request.send(null);
     //make a request to the server and send the name
-    var names = request.responseText;
-    names =JSON.parse(names);
    
 };

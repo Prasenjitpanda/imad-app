@@ -7,7 +7,7 @@ var config ={
     database:'prasenjitpanda123',
     host:'db.imad.hasura-app.io',
     port:'5432',
-    password:db-prasenjitpanda123-5795
+    password:process.env.DB_PASSWORD
     
 };
 

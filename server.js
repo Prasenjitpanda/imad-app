@@ -49,6 +49,7 @@ var articles = {
                 }
 };
 function createTemplate (data){
+  var pool = new Pool(config);
 var title = data.title;
 var date = data.date;
 var heading = data.heading;

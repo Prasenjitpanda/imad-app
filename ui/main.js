@@ -18,7 +18,7 @@ button.onclick = function(){
        //ot done yet
 };
 //make the request
-    request.open(`POST`,`http://prasenjitpanda123.imad.hasura-app.io/counter` , true);
+    request.open(`GET`,`http://prasenjitpanda123.imad.hasura-app.io/counter` , true);
     request.send(null);
 };
 //submit name
